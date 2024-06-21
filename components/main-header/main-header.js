@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 import logoImage from "@/assets/logo.png";
 import MainHeaderBackground from "./main-header-background";
@@ -12,7 +12,12 @@ export default function MainHeader() {
       <MainHeaderBackground />
       <header className={classes.header}>
         <Link href="/" className={classes.logo}>
-          <Image src={logoImage} alt="A plate with food on it" priority />
+          <Image
+            src={logoImage}
+            alt="A plate with food on it"
+            priority
+            quality={70}
+          />
           Wong Food
         </Link>
         <nav className={classes.nav}>

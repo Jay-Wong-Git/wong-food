@@ -1,0 +1,8 @@
+version: "3"
+services:
+  wong-news:
+    container_name: "wong-foodies"
+    build: .
+    image: "wong-foodies:1.0"
+    ports:
+      - 3001:3000
